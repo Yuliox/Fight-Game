@@ -11,7 +11,6 @@ let playerDeath = new Audio('./Sounds/swordDeath1.mp3')
 let enemyDeath = new Audio('./Sounds/swordDeath2.mp3')
 let playerHit = new Audio('./Sounds/hitsound1.mp3')
 let enemyHit = new Audio('./Sounds/hitsound2.mp3')
-var checkIA = document.querySelector('#checkIA')
 
 startButton.addEventListener('click', ()=>{
     startGame()
