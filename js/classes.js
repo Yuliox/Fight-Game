@@ -117,7 +117,7 @@ class Character extends Sprite {
             }
         }
         if(this.isAttacking){
-            c.fillStyle = 'blue'
+            c.fillStyle = 'transparent'
             c.fillRect(
                 this.position.x + this.attackBox.offset.x,
                 this.position.y + this.attackBox.offset.y,
