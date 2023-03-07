@@ -3,7 +3,7 @@ let timerId
 let timeBegin = 4
 let gameOver = true
 let timer = 60
-let enemyIA = false
+let enemyIA = true
 let knockback = 10
 let swordAttack = new Audio('./Sounds/swordAttack.mp3')
 let swordClash = new Audio('./Sounds/swordClash.mp3')
