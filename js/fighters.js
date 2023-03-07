@@ -87,7 +87,7 @@ const medievalBlue = {
     attackBox: {
         offset: {
           x: 0,
-          y: 50
+          y: 0
         },
         width: 160,
         height: 50

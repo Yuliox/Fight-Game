@@ -107,20 +107,20 @@ class Character extends Sprite {
             c.fillText(this.nameCode, this.position.x, this.position.y - 5)
             if(this.health < 100){
                 c.strokeStyle = 'white'
-                c.strokeRect(this.position.x, this.position.y, 100, 5);
+                c.strokeRect(this.position.x -10, this.position.y, 100, 5);
                 c.fillStyle = 'black'
-                c.fillRect(this.position.x, this.position.y, 100, 5);
+                c.fillRect(this.position.x -10, this.position.y, 100, 5);
                 if(this.health >= 0){
                     c.fillStyle = this.color
-                    c.fillRect(this.position.x, this.position.y, this.health, 5);  
+                    c.fillRect(this.position.x -10, this.position.y, this.health, 5);  
                 }  
             }
         }
         if(this.isAttacking){
             c.fillStyle = 'blue'
             c.fillRect(
-                this.attackBox.position.x,
-                this.attackBox.position.y,
+                this.position.x + this.attackBox.offset.x,
+                this.position.y + this.attackBox.offset.y,
                 this.attackBox.width,
                 this.attackBox.height
             )
